@@ -46,8 +46,19 @@
     font-size: 16px;
 }
 
-.centerList li:hover {
-    border-bottom: 2px solid #FF6A00;
+.centerList li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50%;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.centerList li:hover::after {
+    border-bottom-color: #FF6A00;
 }
 
 .right {

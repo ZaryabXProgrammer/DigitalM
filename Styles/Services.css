@@ -1,6 +1,8 @@
 /* Original styles - unchanged */
 
 .services {
+    padding-top: 5%;
+    padding-bottom: 5%;
     height: auto;
     width: 100vw;
     background: rgba(45, 45, 45, 1);
@@ -43,6 +45,10 @@
     gap: 20px;
     justify-content: space-around;
     flex-direction: row-reverse;
+}
+
+.serviceCardText ul li{
+    line-height: 33px;
 }
 
 .serviceBoxCard:nth-child(2n+1) {

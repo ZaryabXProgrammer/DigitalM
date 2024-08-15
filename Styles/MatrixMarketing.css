@@ -10,7 +10,7 @@
 }
 
 .matrixBox {
-    width: 90%;
+    width: 85%;
     /* Adjusted for better spacing */
     margin: 0 auto;
     display: flex;
@@ -53,7 +53,7 @@
     color: white;
     width: 20vw;
     /* Responsive width */
-    height: auto;
+    height: 15.5rem;
     /* Allow height to adjust */
     background: linear-gradient(180deg, #36363E 0%, #292930 100%);
     box-shadow: 0px 0px 10px 0px rgba(255, 106, 0, 1);
@@ -106,6 +106,14 @@
     z-index: 1;
     width: 15vw;
     /* Responsive size */
+    height: auto;
+}
+.whiteStar {
+position: absolute;
+    top: 38%;
+    left: 10%;
+    z-index: 1;
+    width: 48px;
     height: auto;
 }
 

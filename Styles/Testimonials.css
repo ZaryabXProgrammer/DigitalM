@@ -57,6 +57,7 @@
 }
 
 .testimonialCard {
+    z-index: 2;
     border-radius: 10px;
     padding: 22px;
     margin: 3px;
@@ -64,6 +65,11 @@
     height: auto;
     /* Ensure height adapts to content */
     background-color: rgb(244, 248, 250);
+}
+
+.testcompanyname img{
+    width: 43px;
+    
 }
 
 .testmosttop {
@@ -93,6 +99,7 @@
     display: flex;
     align-items: center;
     gap: 3px;
+    padding-top: 39px;
 }
 
 .testcardcenter p {
@@ -109,7 +116,7 @@
     top: 0;
     right: 0;
     z-index: 1;
-    width: 10%;
+    width: 13%;
     height: auto;
 }
 .personPicNew{
@@ -118,14 +125,15 @@
 .moonRoundTest {
     position: absolute;
     top: 63%;
-    left: 4%;
-    z-index: -1;
+    left: 1%;
+    z-index: 1;
     width: 25%;
     height: auto;
 }
 
 .navBtn{
-    width: 100px;
+    padding-top: 39%;
+        width: 10rem;
 }
 
 /* Responsive styles for smaller devices */

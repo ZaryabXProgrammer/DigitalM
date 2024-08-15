@@ -6,6 +6,8 @@
     position: relative;
     color: white;
     z-index: 4;
+    padding-bottom: 4%;
+    padding-top: 2%;
 }
 
 .contactWrapper {
@@ -38,24 +40,23 @@
     width: calc(100% - 120px);
     /* Adjusted width to make space for the button */
     padding: 14px 16px;
-    border-radius: 10px;
+    border-radius: 27px;
     border: 1px solid #ccc;
     font-size: 16px;
+    background-color: #FFFFFF21;
 }
 
 .sendBtn {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    padding: 0 16px;
+    
+    border: none;
+position: absolute;
+    right: 91px;
+    top: 3px;
+    height: 85%;
+    padding: 0px 16px;
     background-color: #FF7700;
     color: white;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100px;
+    border-radius: 27px
     /* Adjusted width to fit within the container */
 }
 

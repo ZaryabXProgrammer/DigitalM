@@ -1,6 +1,6 @@
 .companySection {
     height: auto;
-    min-height: 80vh;
+    min-height: 58vh;
     /* Ensure the section has a minimum height */
     width: 100vw;
     background-color: rgb(255, 255, 255);
@@ -41,7 +41,7 @@
     /* Allow wrapping on smaller screens */
     width: 100%;
     justify-content: center;
-    gap: 40px;
+    gap: 120px;
     /* Reduced gap for better spacing on smaller screens */
 }
 
@@ -72,7 +72,7 @@
 }
 
 .companyCard img {
-    width: 60px;
+    width: 93px;
     /* Slightly smaller icon for better balance */
     margin-bottom: 15px;
     /* Adjusted spacing */
@@ -80,41 +80,53 @@
 
 .companyNumber {
     font-size: 2.5vw;
-    /* Responsive font size */
-    font-weight: bold;
-    text-align: center;
-    color: #FF7700;
-    /* Accent color */
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
 }
 
 .creators {
     font-weight: normal;
-    font-size: 1.5vw;
+    font-size: 18px;
     /* Responsive font size */
     text-align: center;
-    color: #555;
+    color: #000000;
     /* Subtle color for text */
 }
 
 /* Responsive Images */
 
 .companyBlack {
-    position: absolute;
-    top: -10%;
-    right: 0%;
+position: absolute;
+    top: -45%;
+    right: -1%;
     z-index: 1;
     width: 15vw;
-    /* Responsive width */
     height: auto;
 }
 
 .companyOrange {
     position: absolute;
-    top: 20%;
-    left: 0%;
+        top: 9%;
+        left: 0%;
+        z-index: 1;
+        width: 9vw;
+        height: auto;
+}
+.starOrange {
+position: absolute;
+    top: 64%;
+    right: 10%;
     z-index: 1;
-    width: 15vw;
-    /* Responsive width */
+    width: 39px;
+    height: auto;
+}
+.starBlack {
+position: absolute;
+    top: 19%;
+    left: 8%;
+    z-index: 1;
+    width: 39px;
     height: auto;
 }
 
