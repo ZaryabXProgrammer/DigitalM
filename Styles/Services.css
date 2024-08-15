@@ -29,6 +29,10 @@
     gap: 10px;
 }
 
+.serviceHeading p{
+    font-size: 25px;
+}
+
 .allServicesBox {
     display: flex;
     flex-direction: column;
