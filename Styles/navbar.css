@@ -9,7 +9,7 @@
     padding: 0 20px;
     box-sizing: border-box;
     position: relative;
-    /* Added for absolute positioning of elements */
+    /* Removed overflow-x: hidden; */
 }
 
 .left {
@@ -24,11 +24,9 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    /* Positioned absolutely within navbar */
     left: 50%;
     transform: translateX(-50%);
     visibility: visible;
-    /* Visible by default on larger screens */
 }
 
 .centerList {
@@ -65,7 +63,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    /* Positioned relative for the toggle button */
 }
 
 .toggleBtn {
@@ -91,7 +88,7 @@
         /* Reset position */
         transform: none;
         visibility: hidden;
-        /* Hide menu initially on medium and small screens */
+        /* Hide menu initially on medium screens */
         display: none;
     }
 
@@ -116,6 +113,11 @@
 }
 
 @media (max-width: 480px) {
+
+
+    .moonImg{
+        top: 2%;
+    }
     .navbar {
         padding: 10px;
     }
@@ -124,7 +126,9 @@
         width: 30px;
         height: 22px;
     }
-
+.left{
+    margin-right: 174px;
+}
     .left p {
         font-size: 12px;
     }
@@ -134,9 +138,9 @@
     }
 
     .right .contactBtn {
-    padding: 1px 7px;
+        padding: 5px 18px;
         border-radius: 8px;
         font-size: 9px;
-        margin-right: 21px;
+
     }
 }

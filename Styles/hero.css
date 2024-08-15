@@ -65,6 +65,18 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Media Query for mobile screens (480px and below) */
+@media (max-width: 480px) {
+
+    .contactBtn,
+    .learnMoreBtn {
+        padding: 10px 20px;
+        /* Use pixel-based padding for mobile screens */
+        font-size: 14px;
+        /* Adjust font size for readability on small screens */
+    }
+}
+
 .contactBtn {
     background-color: #FF7700;
     color: white;

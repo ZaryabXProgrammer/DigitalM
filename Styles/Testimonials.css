@@ -5,6 +5,8 @@
     width: 100vw;
     background-color: rgb(255, 255, 255);
     position: relative;
+    padding-bottom: 6%;
+    overflow: hidden;
 }
 
 .TestimonialWrapper {
@@ -132,8 +134,8 @@
 }
 
 .navBtn{
-    padding-top: 39%;
-        width: 10rem;
+padding-top: 51%;
+    width: 9rem
 }
 
 /* Responsive styles for smaller devices */
@@ -218,6 +220,7 @@
 
     .testimonialCard {
         padding: 15px;
+        width: 90%;
     }
 
     .earthRound {

@@ -35,6 +35,7 @@
     gap: 20px;
     width: 80vw;
     justify-content: center;
+    align-items: center;
 }
 
 .serviceBoxCard {
@@ -42,13 +43,13 @@
     height: 19rem;
     display: flex;
     align-items: center;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 10px;
+    justify-content: space-evenly;
     flex-direction: row-reverse;
 }
 
 .serviceCardText ul li{
-    line-height: 33px;
+    line-height: 21px;
 }
 
 .serviceBoxCard:nth-child(2n+1) {
@@ -64,8 +65,9 @@
 }
 
 .serviceCardText ul li::marker {
-    color: orange;
+    color: rgba(255, 106, 0, 1);;
     font-size: 2rem;
+    box-shadow: 0px 0px 10px 0px rgba(255, 106, 0, 1);
 }
 
 /* Responsive styles for smaller devices */
