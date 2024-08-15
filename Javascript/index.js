@@ -83,3 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
     testimonialCardBox.scrollLeft = scrollLeft - walk;
   });
 });
+
+// Navbar smooth animations
+

@@ -30,12 +30,12 @@
 
     <nav class="navbar">
         <div class="left">
-            <img width="40" height="30" style="margin-right: 6px;" src="./Assets/Navbar/logoImg.png" alt="">
+            <img class="matrixLogoNav" style="margin-right: 6px;" src="./Assets/Navbar/Matrix.png" alt="">
             <!-- <p style="font-size: 13px; margin: 0;">Logo</p> -->
         </div>
 
         <div class="center">
-            <ul class="centerList">
+            <ul class="centerList active">
                 <li data-target="hero">Home</li>
                 <li data-target="companySection">About Us</li>
                 <li data-target="services">Services</li>
@@ -50,14 +50,7 @@
         </div>
     </nav>
 
-    <script>
-        document.querySelectorAll('.centerList li').forEach(item => {
-            item.addEventListener('click', function () {
-                const targetId = this.getAttribute('data-target');
-                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+
 
 
 
@@ -577,7 +570,7 @@ Testimonials -->
 
             <div class="footerLeft">
                 <div class="footerleftTop">
-                    <img src="./Assets/Navbar/logoImg.png" width="40" height="40" alt="Logo">
+                    <img src="./Assets/Navbar/Matrix.png" width="150"  alt="Logo">
                     <!-- <h4 class="footerLogoText">Logo</h4> -->
                 </div>
                 <div class="footerleftBottom">
