@@ -28,20 +28,19 @@
 
 <body>
 
-
     <nav class="navbar">
         <div class="left">
             <img width="40" height="30" style="margin-right: 6px;" src="./Assets/Navbar/logoImg.png" alt="">
-            <p style="font-size: 13px; margin: 0;">Logo</p>
+            <!-- <p style="font-size: 13px; margin: 0;">Logo</p> -->
         </div>
 
         <div class="center">
             <ul class="centerList">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Testimonials</li>
-                <li>Our Team</li>
+                <li data-target="hero">Home</li>
+                <li data-target="companySection">About Us</li>
+                <li data-target="services">Services</li>
+                <li data-target="Testimonials">Testimonials</li>
+
             </ul>
         </div>
 
@@ -51,11 +50,20 @@
         </div>
     </nav>
 
+    <script>
+        document.querySelectorAll('.centerList li').forEach(item => {
+            item.addEventListener('click', function () {
+                const targetId = this.getAttribute('data-target');
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
 
 
     <!-- Hero Section -->
 
-    <section class="hero">
+    <section class="hero" id="hero">
 
         <img class="moonImg" src="./Assets/Hero/moon.png" alt="">
         <img class="whiteCloud" src="./Assets/Hero/whiteCloud.png" alt="">
@@ -110,7 +118,7 @@
     <!-- Company Name Section  -->
 
 
-    <section class="companySection">
+    <section class="companySection" id="companySection">
 
 
         <img class="companyBlack" src="./Assets/Companies/companyBlack.png" alt="">
@@ -179,7 +187,7 @@
     <!-- Matrix Marketing Section  -->
 
 
-    <section class="matrixSection">
+    <section class="matrixSection" id="matrixSection">
 
         <img class="matrixBlack" src="./Assets/Matrix/matrixBlack.png" alt="">
         <img class="whiteStar" src="./Assets/Matrix/whiteStar.png" alt="">
@@ -190,7 +198,7 @@
 
             <div class="Matrixheader">
 
-                <p>// 01 . Boost Your Income, Stress-Free</p>
+                <h3>01 . Boost Your Income, Stress-Free</h3>
 
                 <h1>With Matrix Marketing, you&apos;re guaranteed <br> income for your content</h1>
 
@@ -276,11 +284,9 @@ Testimonials -->
 
 
 
-    <section class="Testimonial">
+    <section class="Testimonial" id="Testimonials">
         <img class="earthRound" src="./Assets/Testimonials/Earth.png" alt="">
-        <img class="moonRoundTest" src="./Assets/Testimonials/moonTEst.png" alt="">
-
-
+        <!-- <img class="moonRoundTest" src="./Assets/Testimonials/moonTEst.png" alt=""> -->
 
         <div class="TestimonialWrapper">
             <div class="Testtop">
@@ -292,32 +298,28 @@ Testimonials -->
                     </div>
                 </div>
                 <div class="TestTopRight">
-                    <div><img class="navBtn" src="./Assets/Testimonials/NavBtn.png" alt=""></div>
+                    <!-- <div><img class="navBtn" src="./Assets/Testimonials/NavBtn.png" alt=""></div> -->
                 </div>
             </div>
 
             <div class="Testcenter">
-                <div class="TestimonialCardBox">
+                <div class="TestimonialCardBox" id="TestimonialCardBox">
                     <div class="testimonialCard">
                         <div class="testmosttop">
                             <div class="testcardtop">
-                                <div class="testcompanyname">
-                                    <img src="./Assets/Testimonials/cardImgOne.png" alt="">
-                                    <h5>Company</h5>
-                                </div>
-                                <img class="rating" src="./Assets/Testimonials/rating.png" alt="">
+                                <span></span>
                             </div>
                             <div class="testcardcenter">
                                 <p>"Matrix Marketing has been easy to work with. Their photo and video content is great
-                                    and
-                                    they have provided me with everything I need."</p>
+                                    and they have provided me with everything I need."</p>
                             </div>
                         </div>
                         <div class="testcardbottom">
                             <img class="personPicNew" src="./Assets/Testimonials/person1.png" alt="">
                             <div>
                                 <div class="testPersonName">John Carter</div>
-                                <div class="testPersontext">Loreum Ipsum</div>
+                                <div class="testPersontext"><img class="rating" src="./Assets/Testimonials/rating.png"
+                                        alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -325,22 +327,59 @@ Testimonials -->
                     <div class="testimonialCard">
                         <div class="testmosttop">
                             <div class="testcardtop">
-                                <div class="testcompanyname">
-                                    <img src="./Assets/Testimonials/CardImgTwo.png" alt="">
-                                    <h5>Company</h5>
-                                </div>
-                                <img class="rating" src="./Assets/Testimonials/rating.png" alt="">
+                                <span></span>
                             </div>
                             <div class="testcardcenter">
-                                <p>"Lorem Ipsum has been the industry's standard from dummy text ever since the unknown
-                                    printer to galley of type and make a type"</p>
+                                <p>"The team at Matrix Marketing is very professional and they consistently deliver
+                                    quality results."</p>
                             </div>
                         </div>
                         <div class="testcardbottom">
-                            <img class="personPicNew" src="./Assets/Testimonials/person2.png" alt="">
+                            <img class="personPicNew" src="https://randomuser.me/api/portraits/women/2.jpg" alt="">
                             <div>
-                                <div class="testPersonName">John Carter</div>
-                                <div class="testPersontext">Loreum Ipsum</div>
+                                <div class="testPersonName">Sarah Parker</div>
+                                <div class="testPersontext"><img class="rating" src="./Assets/Testimonials/rating.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonialCard">
+                        <div class="testmosttop">
+                            <div class="testcardtop">
+                                <span></span>
+                            </div>
+                            <div class="testcardcenter">
+                                <p>"Their innovative approach has significantly boosted our online presence. Highly
+                                    recommend them!"</p>
+                            </div>
+                        </div>
+                        <div class="testcardbottom">
+                            <img class="personPicNew" src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+                            <div>
+                                <div class="testPersonName">Michael Smith</div>
+                                <div class="testPersontext"><img class="rating" src="./Assets/Testimonials/rating.png"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonialCard">
+                        <div class="testmosttop">
+                            <div class="testcardtop">
+                                <span></span>
+                            </div>
+                            <div class="testcardcenter">
+                                <p>"Matrix Marketing has been a game changer for our company. Their strategies are
+                                    top-notch!"</p>
+                            </div>
+                        </div>
+                        <div class="testcardbottom">
+                            <img class="personPicNew" src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
+                            <div>
+                                <div class="testPersonName">Emily Johnson</div>
+                                <div class="testPersontext"><img class="rating" src="./Assets/Testimonials/rating.png"
+                                        alt=""></div>
                             </div>
                         </div>
                     </div>
@@ -350,11 +389,9 @@ Testimonials -->
     </section>
 
 
-
-
     <!-- //Services Section -->
 
-    <section class="services">
+    <section class="services" id="services">
 
         <div class="serviceWrapper">
 
@@ -503,24 +540,29 @@ Testimonials -->
     Contact Us -->
 
 
-
-    <section class="contactUs">
+    <section class="contactUs" id="contactUs">
         <div class="contactWrapper">
             <div class="leftContact">
                 <div class="ContactUsHeader">
                     <h1 style="color: #FF7700;">Contact Us</h1>
-                    <p>Ready to turn your content into income? Contact us today <br>and start your journey with Matrix
+                    <p>Ready to turn your content into income? Contact us today and start your journey with Matrix
                         Marketing.</p>
                 </div>
             </div>
-            <div class="rightContact">
-                <div class="emailBox">
-                    <input type="text" class="emailUs" placeholder="Enter your email">
-                    <button class="sendBtn">Send</button>
-                </div>
+
+            <div class="contactBottom">
+                <form id="contactForm" class="contactForm" action="#" method="post">
+                    <input type="text" id="name" class="formInput" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" class="formInput" name="email" placeholder="Your Email" required>
+                    <textarea id="message" class="formInput" name="message" placeholder="Your Message" rows="4"
+                        required></textarea>
+                    <button type="submit" class="submitBtn">Send</button>
+                </form>
             </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 
 
@@ -536,29 +578,29 @@ Testimonials -->
             <div class="footerLeft">
                 <div class="footerleftTop">
                     <img src="./Assets/Navbar/logoImg.png" width="40" height="40" alt="Logo">
-                    <h4 class="footerLogoText">Logo</h4>
+                    <!-- <h4 class="footerLogoText">Logo</h4> -->
                 </div>
                 <div class="footerleftBottom">
-                    <p>Our mission is to help creators like you monetize <br>your content effortlessly. With our
-                        hands-free <br> approach, you can focus on what you do best.</p>
+                    <p>Our mission is to help creators like you monetize your content effortlessly. With our
+                        hands-free approach, you can focus on what you do best.</p>
                 </div>
             </div>
 
-            <div class="footerRight">
+            <!-- <div class="footerRight">
                 <div class="footerRightTop">
-                    <div class="EnterEmailText">
+                    <!-- <div class="EnterEmailText">
                         <div><img src="./Assets/Footer/mail.png" width="30" height="30" alt="Mail"></div>
                         <div class="EnterEmailDescription">
                             <h4>Enter Your Email</h4>
                             <p>We’ll contact you soon</p>
                         </div>
-                    </div>
-                    <div class="EnterEmailInput">
+                    </div> -->
+            <!-- <div class="EnterEmailInput">
                         <input type="text" class="emailInputBox" placeholder="Enter Email">
                         <img src="./Assets/Footer/sendbtn.png" width="54" height="54" alt="Send">
-                    </div>
-                </div>
-                <div class="footerRightCenter">
+                    </div> -->
+        </div>
+        <!-- <div class="footerRightCenter">
                     <span><img src="./Assets/Footer/shape.png" alt="Category Shape"></span>
                     <p>Category</p>
                 </div>
@@ -570,8 +612,8 @@ Testimonials -->
                         <li>About Us</li>
                         <li>Contact Us</li>
                     </ul>
-                </div>
-            </div>
+                </div> -->
+        </div>
         </div>
         <hr style="margin: 14px;">
         <!-- New lower portion of the footer -->

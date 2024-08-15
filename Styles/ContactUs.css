@@ -9,16 +9,24 @@
     padding-bottom: 4%;
     padding-top: 2%;
 }
-
+.ContactUsHeader{
+    text-align: center;
+}
 .contactWrapper {
     height: 100%;
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+   flex-direction: column;
     align-items: center;
     gap: 20px;
     /* Increased gap for better spacing */
+}
+
+
+
+.contactBottm{
+    text-align: center;
 }
 
 .leftContact {
@@ -44,6 +52,7 @@
     border: 1px solid #ccc;
     font-size: 16px;
     background-color: #FFFFFF21;
+    color: white;
 }
 
 .sendBtn {
@@ -109,5 +118,69 @@ position: absolute;
         font-size: 14px;
         /* Reduced font size for smaller screens */
         left: 71%;
+    }
+}
+
+.contactBottom {
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.formInput {
+    width: calc(100% - 40px);
+    padding: 14px;
+    border-radius: 27px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF21;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+textarea.formInput {
+    resize: none;
+}
+
+.submitBtn {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px;
+    background-color: #FF7700;
+    color: white;
+    border: none;
+    border-radius: 27px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+    .formInput {
+        width: calc(100% - 30px);
+        font-size: 14px;
+    }
+
+    .submitBtn {
+        width: 100%;
+        max-width: 250px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formInput {
+        width: calc(100% - 20px);
+        font-size: 12px;
+    }
+
+    .submitBtn {
+        width: 100%;
+        max-width: 200px;
+        font-size: 12px;
     }
 }
