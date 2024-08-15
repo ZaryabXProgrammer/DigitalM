@@ -194,11 +194,11 @@ position: absolute;
     }
 
     .MatCardText {
-        font-size: 3vw;
+        font-size: 18px;
     }
 
     .MatCardTextSmall {
-        font-size: 2.5vw;
+        font-size: 11px;
     }
 
     .matrixBlack {

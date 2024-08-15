@@ -129,12 +129,12 @@
 }
 
 .matrixLogoNav {
-    width: 92px;
+    width: 110px;
 }
 
 @media (max-width: 480px) {
     .matrixLogoNav {
-        width: 80px;
+        width: 123px;
     }
 
     .navbar {
@@ -235,9 +235,7 @@
 }
 
 @media (max-width: 480px) {
-    .matrixLogoNav {
-        width: 80px;
-    }
+  
 
     .navbar {
         padding: 10px;
