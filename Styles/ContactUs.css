@@ -108,5 +108,6 @@ position: absolute;
         /* Further adjust button width */
         font-size: 14px;
         /* Reduced font size for smaller screens */
+        left: 71%;
     }
 }
