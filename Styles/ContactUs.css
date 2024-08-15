@@ -1,0 +1,111 @@
+.contactUs {
+    height: auto;
+    /* Changed to auto for better flexibility on smaller screens */
+    width: 100vw;
+    background: linear-gradient(90deg, #16171D 0%, #5C5C5C 100%);
+    position: relative;
+    color: white;
+    z-index: 4;
+}
+
+.contactWrapper {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    /* Increased gap for better spacing */
+}
+
+.leftContact {
+    flex: 1;
+}
+
+.rightContact {
+    flex: 1;
+}
+
+.emailBox {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    /* Adjusted max-width to fit the container */
+}
+
+.emailUs {
+    width: calc(100% - 120px);
+    /* Adjusted width to make space for the button */
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.sendBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 16px;
+    background-color: #FF7700;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    /* Adjusted width to fit within the container */
+}
+
+/* Responsive styles for smaller devices */
+
+@media (max-width: 768px) {
+    .contactWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftContact,
+    .rightContact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .emailBox {
+        width: 90%;
+        /* Adjust width for better fit on smaller screens */
+    }
+
+    .emailUs {
+        width: calc(100% - 80px);
+        /* Adjusted width to fit smaller button */
+    }
+
+    .sendBtn {
+        width: 80px;
+        /* Adjust button width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contactWrapper {
+        gap: 15px;
+        /* Reduced gap for tighter layouts on very small screens */
+    }
+
+    .emailUs {
+        width: calc(100% - 60px);
+        /* Further adjust width to fit the button */
+        font-size: 14px;
+        /* Reduced font size for smaller screens */
+    }
+
+    .sendBtn {
+        width: 60px;
+        /* Further adjust button width */
+        font-size: 14px;
+        /* Reduced font size for smaller screens */
+    }
+}

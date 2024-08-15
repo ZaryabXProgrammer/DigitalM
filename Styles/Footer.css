@@ -1,0 +1,160 @@
+.footerContainer {
+    margin-top: 23px;
+   
+    width: 100vw;
+    background: linear-gradient(90deg, #16171D 0%, #5C5C5C 100%);
+    position: relative;
+    color: white;
+    z-index: 4;
+}
+
+.footerWrapper {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footerLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footerleftTop {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.footerLogoText {
+    color: #FF7700;
+}
+
+.footerleftBottom p {
+    margin: 0;
+}
+
+.footerRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.footerRightTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.EnterEmailText {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.EnterEmailDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.EnterEmailInput {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.emailInputBox {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px;
+    gap: 10px;
+    background-color: transparent;
+    width: 277px;
+    height: 52px;
+    border: 1px solid rgba(226, 232, 240, 0.5);
+    border-radius: 6px;
+    flex-grow: 1;
+}
+
+.footerRightCenter {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.footerRightBottom ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerRightBottom ul li {
+    position: relative;
+    padding-left: 40px;
+}
+
+.footerRightBottom ul li::before {
+    content: url('../Assets/Footer/arrow.png');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footerWrapper {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .footerLeft,
+    .footerRight {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footerRightTop {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .EnterEmailInput {
+        flex-direction: column;
+    }
+
+    .emailInputBox {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footerRightBottom ul {
+        flex-direction: column;
+    }
+
+    .footerRightBottom ul li {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footerRightBottom ul li::before {
+      padding-right: 30%;
+      margin-right: 40px;
+        transform: translate(-50%, -50%);
+    }
+}

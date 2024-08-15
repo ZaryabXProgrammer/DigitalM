@@ -1,0 +1,128 @@
+/* Original styles - unchanged */
+
+.services {
+    height: auto;
+    width: 100vw;
+    background: rgba(45, 45, 45, 1);
+    position: relative;
+    color: white;
+    z-index: 4;
+}
+
+.serviceWrapper {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.serviceHeading {
+    margin-top: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.allServicesBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80vw;
+    justify-content: center;
+}
+
+.serviceBoxCard {
+    width: 97%;
+    height: 19rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.serviceBoxCard:nth-child(2n+1) {
+    flex-direction: row;
+}
+
+.serviceCardImg {
+    flex: 1;
+}
+
+.serviceCardText {
+    flex: 1;
+}
+
+.serviceCardText ul li::marker {
+    color: orange;
+    font-size: 2rem;
+}
+
+/* Responsive styles for smaller devices */
+
+@media (max-width: 768px) {
+    .serviceWrapper {
+        width: 90%;
+    }
+
+    .serviceHeading h4 {
+        font-size: 28px;
+    }
+
+    .allServicesBox {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .serviceBoxCard {
+        height: auto;
+        /* Adjust height for content */
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .serviceBoxCard:nth-child(2n+1) {
+        flex-direction: column;
+    }
+
+    .serviceCardImg img {
+        width: 70%;
+        /* Scale down images */
+    }
+}
+
+@media (max-width: 480px) {
+    .serviceWrapper {
+        width: 95%;
+    }
+
+    .serviceHeading h4 {
+        font-size: 24px;
+    }
+
+    .allServicesBox {
+        gap: 10px;
+    }
+
+    .serviceBoxCard {
+        height: auto;
+        /* Adjust height for content */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviceCardImg img {
+        width: 80%;
+        /* Further scale down images */
+    }
+
+    .serviceCardText ul li::marker {
+        font-size: 1.5rem;
+        /* Adjust bullet point size */
+    }
+}

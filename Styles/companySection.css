@@ -1,0 +1,221 @@
+.companySection {
+    height: auto;
+    min-height: 80vh;
+    /* Ensure the section has a minimum height */
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding: 40px 20px;
+    /* Add padding to ensure content doesn't touch the edges */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Prevent overflow issues */
+}
+
+.companyNameBox {
+    width: 90%;
+    /* Adjusted width for better spacing */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    /* Center-align text for a cleaner look */
+}
+
+.header {
+    font-size: 2.5vw;
+    /* Responsive font size */
+    font-weight: bold;
+    color: #333;
+    /* Darker color for better contrast */
+    margin-bottom: 30px;
+    /* Space below header */
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    width: 100%;
+    justify-content: center;
+    gap: 40px;
+    /* Reduced gap for better spacing on smaller screens */
+}
+
+.companyCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+    /* Reduced height for better mobile compatibility */
+    width: 10rem;
+    /* Reduced width for better mobile compatibility */
+   
+    /* Light background for better contrast */
+    padding: 20px;
+    /* Added padding for better spacing */
+    border-radius: 10px;
+    /* Slightly rounded corners for a softer look */
+    
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.companyCard:hover {
+    transform: translateY(-5px);
+    /* Lift on hover */
+}
+
+.companyCard img {
+    width: 60px;
+    /* Slightly smaller icon for better balance */
+    margin-bottom: 15px;
+    /* Adjusted spacing */
+}
+
+.companyNumber {
+    font-size: 2.5vw;
+    /* Responsive font size */
+    font-weight: bold;
+    text-align: center;
+    color: #FF7700;
+    /* Accent color */
+}
+
+.creators {
+    font-weight: normal;
+    font-size: 1.5vw;
+    /* Responsive font size */
+    text-align: center;
+    color: #555;
+    /* Subtle color for text */
+}
+
+/* Responsive Images */
+
+.companyBlack {
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    z-index: 1;
+    width: 15vw;
+    /* Responsive width */
+    height: auto;
+}
+
+.companyOrange {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    z-index: 1;
+    width: 15vw;
+    /* Responsive width */
+    height: auto;
+}
+
+/* Media Queries for Better Responsiveness */
+
+@media (max-width: 1024px) {
+    .header {
+        font-size: 4vw;
+        /* Larger font for tablets */
+    }
+
+    .companyCard {
+        height: 10rem;
+        width: 8rem;
+    }
+
+    .companyCard img {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    .companyNumber {
+        font-size: 3.5vw;
+    }
+
+    .creators {
+        font-size: 2vw;
+    }
+
+    .companyBlack,
+    .companyOrange {
+        width: 20vw;
+        /* Adjust image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .companyNameBox {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+
+    .companies {
+        gap: 20px;
+        /* Narrower gap for mobile */
+    }
+
+    .companyCard {
+        height: 8rem;
+        width: 6rem;
+    }
+
+    .companyCard img {
+        width: 40px;
+    }
+
+    .companyNumber {
+        font-size: 4vw;
+    }
+
+    .creators {
+        font-size: 2.5vw;
+    }
+
+    .companyBlack,
+    .companyOrange {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 6vw;
+        /* Adjust header size for mobile */
+    }
+
+    .companies {
+        gap: 15px;
+        /* Smaller gap for mobile */
+    }
+
+    .companyCard {
+        height: 7rem;
+        width: 5rem;
+    }
+
+    .companyCard img {
+        width: 35px;
+    }
+
+    .companyNumber {
+        font-size: 5vw;
+    }
+
+    .creators {
+        font-size: 3vw;
+    }
+
+    .companyBlack,
+    .companyOrange {
+        width: 30vw;
+        /* Adjust image size for mobile */
+    }
+}
