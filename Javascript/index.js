@@ -14,6 +14,16 @@ document.querySelectorAll(".centerList li").forEach((item) => {
   });
 });
 
+//smoorth scroll hero contact us button
+
+document
+  .getElementById("heroContactBtn")
+  .addEventListener("click", function () {
+    document.getElementById("contactUs").scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+
 // /send email
 
 // Ensure the script runs after the DOM is fully loaded
@@ -52,37 +62,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //For draggablke
 
-document.addEventListener("DOMContentLoaded", () => {
-  const testimonialCardBox = document.getElementById("TestimonialCardBox");
-  let isDown = false;
-  let startX;
-  let scrollLeft;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const testimonialCardBox = document.getElementById("TestimonialCardBox");
+//   let isDown = false;
+//   let startX;
+//   let scrollLeft;
 
-  testimonialCardBox.addEventListener("mousedown", (e) => {
-    isDown = true;
-    testimonialCardBox.classList.add("active");
-    startX = e.pageX - testimonialCardBox.offsetLeft;
-    scrollLeft = testimonialCardBox.scrollLeft;
-  });
+//   testimonialCardBox.addEventListener("mousedown", (e) => {
+//     isDown = true;
+//     testimonialCardBox.classList.add("active");
+//     startX = e.pageX - testimonialCardBox.offsetLeft;
+//     scrollLeft = testimonialCardBox.scrollLeft;
+//   });
 
-  testimonialCardBox.addEventListener("mouseleave", () => {
-    isDown = false;
-    testimonialCardBox.classList.remove("active");
-  });
+//   testimonialCardBox.addEventListener("mouseleave", () => {
+//     isDown = false;
+//     testimonialCardBox.classList.remove("active");
+//   });
 
-  testimonialCardBox.addEventListener("mouseup", () => {
-    isDown = false;
-    testimonialCardBox.classList.remove("active");
-  });
+//   testimonialCardBox.addEventListener("mouseup", () => {
+//     isDown = false;
+//     testimonialCardBox.classList.remove("active");
+//   });
 
-  testimonialCardBox.addEventListener("mousemove", (e) => {
-    if (!isDown) return; // Stop if not dragging
-    e.preventDefault(); // Prevent text selection
-    const x = e.pageX - testimonialCardBox.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust the scroll speed
-    testimonialCardBox.scrollLeft = scrollLeft - walk;
-  });
-});
+//   testimonialCardBox.addEventListener("mousemove", (e) => {
+//     if (!isDown) return; // Stop if not dragging
+//     e.preventDefault(); // Prevent text selection
+//     const x = e.pageX - testimonialCardBox.offsetLeft;
+//     const walk = (x - startX) * 2; // Adjust the scroll speed
+//     testimonialCardBox.scrollLeft = scrollLeft - walk;
+//   });
+// });
 
 // Navbar smooth animations
+
+//testimonial card box slider using slicker
+
 

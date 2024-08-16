@@ -23,6 +23,11 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
 
 </head>
 
@@ -90,7 +95,7 @@
 
             <div class="leftBottom">
 
-                <button class="contactBtn">Contact Us</button>
+                <button class="contactBtn" id="heroContactBtn">Contact Us</button>
                 <!-- <button class="learnMoreBtn">Learn More</button> -->
 
             </div>
@@ -276,6 +281,10 @@
 Testimonials -->
 
 
+    <!-- use testinmonai lsection here -->
+
+
+
 
     <section class="Testimonial" id="Testimonials">
         <img class="earthRound" src="./Assets/Testimonials/Earth.png" alt="">
@@ -296,16 +305,18 @@ Testimonials -->
             </div>
 
             <div class="Testcenter">
-                <div class="TestimonialCardBox" id="TestimonialCardBox">
+                <div class="TestimonialCardBox responsive slider" id="TestimonialCardBoxId">
+
+
                     <div class="testimonialCard">
                         <div class="testmosttop">
-                            <div class="testcardtop">
-                                <span></span>
-                            </div>
+
                             <div class="testcardcenter">
-                                <p>"Matrix Marketing has been easy to work with. Their photo and video content is great and they have provided me with
-                                everything i need. The amazing support from their team means I never have to worry. I have more free time to complete my
-                                studies and make extra money whilst I do so. So happy"</p>
+                                <p>"Matrix Marketing has been easy to work with. Their photo and video content is great
+                                    and they have provided me with
+                                    everything i need. The amazing support from their team means I never have to worry.
+                                    I have more free time to complete my
+                                    studies and make extra money whilst I do so. So happy"</p>
                             </div>
                         </div>
                         <div class="testcardbottom">
@@ -324,8 +335,10 @@ Testimonials -->
                                 <span></span>
                             </div>
                             <div class="testcardcenter">
-                                <p>"I had trouble managing my social media and wasn’t making money. Matrix Marketing took over and did a great job. They
-                                send me weekly content ideas and give me possitive feedback and help when I need it. Team are great"</p>
+                                <p>"I had trouble managing my social media and wasn’t making money. Matrix Marketing
+                                    took over and did a great job. They
+                                    send me weekly content ideas and give me possitive feedback and help when I need it.
+                                    Team are great"</p>
                             </div>
                         </div>
                         <div class="testcardbottom">
@@ -344,15 +357,17 @@ Testimonials -->
                                 <span></span>
                             </div>
                             <div class="testcardcenter">
-                                <p>"Working with Matrix Marketing is the best decision I made for my career. I have more time to focus on other areas of my
-                                businesses knowing that they will take care of all social media. They understand me well and help me every step of the
-                                way :)"</p>
+                                <p>"Working with Matrix Marketing is the best decision I made for my career. I have more
+                                    time to focus on other areas of my
+                                    businesses knowing that they will take care of all social media. They understand me
+                                    well and help me every step of the
+                                    way :)"</p>
                             </div>
                         </div>
                         <div class="testcardbottom">
-                        <img class="personPicNew" src="https://randomuser.me/api/portraits/women/30.jpg" alt="">
+                            <img class="personPicNew" src="https://randomuser.me/api/portraits/women/30.jpg" alt="">
                             <div>
-                                    <div class="testPersonName">Camila S..</div>
+                                <div class="testPersonName">Camila S..</div>
                                 <div class="testPersontext"><img class="rating" src="./Assets/Testimonials/rating.png"
                                         alt=""></div>
                             </div>
@@ -365,8 +380,9 @@ Testimonials -->
                                 <span></span>
                             </div>
                             <div class="testcardcenter">
-                                <p>"The team is veryy trustworthy and professional. Since joining with Matrix Marketing I have made more money from my
-                                content than ever before!"</p>
+                                <p>"The team is veryy trustworthy and professional. Since joining with Matrix Marketing
+                                    I have made more money from my
+                                    content than ever before!"</p>
                             </div>
                         </div>
                         <div class="testcardbottom">
@@ -385,6 +401,8 @@ Testimonials -->
 
 
     <!-- //Services Section -->
+
+
 
     <section class="services" id="services">
 
@@ -572,7 +590,7 @@ Testimonials -->
 
             <div class="footerLeft">
                 <div class="footerleftTop">
-                    <img src="./Assets/Navbar/Matrix.png" width="150"  alt="Logo">
+                    <img src="./Assets/Navbar/Matrix.png" class="footerMatLogo" alt="Logo">
                     <!-- <h4 class="footerLogoText">Logo</h4> -->
                 </div>
                 <div class="footerleftBottom">
@@ -615,18 +633,65 @@ Testimonials -->
         <div class="footerBottom">
             <p>&copy; 2024 | All Rights Reserved | COPYRIGHT © 2024</p>
             <div class="socialIcons">
-                <img src="./Assets/Footer/fb.png" alt="Facebook">
-                <img src="./Assets/Footer/twitter.png" alt="Twitter">
-                <img src="./Assets/Footer/insta.png" alt="Instagram">
-                <img src="./Assets/Footer/linkedin.png" alt="LinkedIn">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./Assets/Footer/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="./Assets/Footer/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./Assets/Footer/insta.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="./Assets/Footer/linkedin.png" alt="LinkedIn">
+                </a>
             </div>
+
         </div>
     </footer>
 
 
 
-    <script src="./Javascript/index.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  
+    <script>
+        $(document).ready(function () {
+            $('.responsive').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true,
+                arrows: true,
+                speed: 300,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>

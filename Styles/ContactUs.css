@@ -133,7 +133,7 @@ position: absolute;
 }
 
 .formInput {
-    width: calc(100% - 40px);
+width: calc(202% - 40px);   
     padding: 14px;
     border-radius: 27px;
     border: 1px solid #ccc;
@@ -161,7 +161,7 @@ textarea.formInput {
 /* Responsive styles for smaller devices */
 @media (max-width: 768px) {
     .formInput {
-        width: calc(100% - 30px);
+        width: calc(120% - 30px);
         font-size: 14px;
     }
 
@@ -174,7 +174,7 @@ textarea.formInput {
 
 @media (max-width: 480px) {
     .formInput {
-        width: calc(100% - 20px);
+        width: calc(152% - 20px);
         font-size: 12px;
     }
 
