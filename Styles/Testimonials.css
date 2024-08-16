@@ -106,6 +106,7 @@
 
 .testcardcenter p {
     margin: 0;
+    height: auto;
 }
 
 .testPersonName {

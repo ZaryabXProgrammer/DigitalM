@@ -123,7 +123,7 @@ position: absolute;
 }
 .starBlack {
 position: absolute;
-    top: 19%;
+    top: 16%;
     left: 8%;
     z-index: 1;
     width: 39px;
@@ -198,6 +198,14 @@ position: absolute;
 }
 
 @media (max-width: 480px) {
+
+.companySection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
     .header {
         font-size: 6vw;
         /* Adjust header size for mobile */
@@ -229,5 +237,9 @@ position: absolute;
     .companyOrange {
         width: 30vw;
         /* Adjust image size for mobile */
+    }
+
+    .companyOrange{
+        top: 28%;
     }
 }
