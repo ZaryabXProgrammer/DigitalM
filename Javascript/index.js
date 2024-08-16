@@ -97,5 +97,3 @@ document.addEventListener("DOMContentLoaded", function () {
 // Navbar smooth animations
 
 //testimonial card box slider using slicker
-
-
